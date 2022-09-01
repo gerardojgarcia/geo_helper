@@ -1,11 +1,13 @@
 <script >
 
 import AppButton from './components/AppButton.vue'
+import Nav from './components/Nav.vue';
 
 export default {
 
 components: {
-  AppButton,
+    AppButton,
+    Nav
 },
 props: {
   name: String
@@ -20,13 +22,16 @@ props: {
 </script>
 
 <template>
+<header class="w-full flex justify-evenly my-8 bg-blue items-center align-center">
+
+  <Nav/>
+  
+
+  <AppButton name="Login/Register"/>  
+
+</header>
 
 
-<div>
-
-  <AppButton name="Login/Register" />
-
-</div>
 </template>
 
 <style scoped>
