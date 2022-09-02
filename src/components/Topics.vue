@@ -1,11 +1,13 @@
 <script>
 import AppButton from './AppButton.vue';
+import TopicsCard from './TopicsCard.vue';
 export default {
     name: "Topics",
-    components: { AppButton },
+    components: { AppButton, TopicsCard },
 
     props: {
-        name: String
+        name: String,
+        topics: Array
     }
 }
 </script>
@@ -14,38 +16,31 @@ export default {
 <template>
 
 
-    <div class="container">
+    <div class="container w-full flex flex-col align-center justify-center px-16 overflow-hidden">
     
         <!--Topics <Header-->
 
 
-    <div>
-        <p>Earth Science Topics</p>
+    <div class="mt-16">
+        <p class="text-yellow-600 text-left ml-8">Earth Science Topics</p>
 
 
-        <h2>Explore Topics</h2>
+        <h2 class="text-5xl text-left ml-8">Explore Topics</h2>
      
     </div>
 
 
     <!-- Topics Card <Box-->
     
-    <div class="topic-box">
+    <div class="topic-box w-5/6 flex flex-row w-full mx-2 my-16 py-8 overflow-x-auto self-center"  >
     
     
         
-    <div class="topic-card">
-    
-        <div><img src="/" alt="" class="topic-img"></div>
-        <strong>The Earth</strong>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate dicta ut vero praesentium nostrum reiciendis!</p>
-
-        <AppButton name='Explore'/>
-    
-    
-    </div>
-    
-    
+   <div class="flex flex-row " v-for="topic in topics" :key="id">
+       
+       <TopicsCard  :topic="topic"/>
+       
+   </div>
     
     
     

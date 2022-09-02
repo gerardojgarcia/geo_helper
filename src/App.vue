@@ -17,6 +17,59 @@ components: {
 },
 props: {
   name: String
+},
+
+data() {
+  return {
+    topics: []
+  }
+},
+
+created() {
+  this.topics = [
+
+
+  {
+    id: 1,
+    topic: 'The Earth',
+    description: "An overview of the Earth and it's life systems",
+    image: '/img1.png',
+    link: 'google.com'
+  },
+
+  {
+    id: 2,
+    topic: 'Minerals',
+    description: "Everything you wanted to knmow about minerals",
+    image: '/img2.png',
+    link: "weebly.com"
+
+  },
+
+  {
+    id: 2,
+    topic: 'Volcanoes',
+    description: "Everything you wanted to knmow about minerals",
+    image: '/pexels-pixabay-73830.jpg',
+    link: "weebly.com"
+
+  },
+
+  {
+    id: 2,
+    topic: 'Volcanoes',
+    description: "Everything you wanted to knmow about minerals",
+    image: '/img2.png',
+    link: "weebly.com"
+
+  }
+
+
+
+
+
+
+  ]
 }
 
 
@@ -44,7 +97,7 @@ props: {
         
         
             <Partners/>
-            <Topics/>
+            <Topics :topics='topics'/>
         </div>
       </template>
 
