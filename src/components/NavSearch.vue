@@ -32,7 +32,7 @@ export default {
        
        <!--SearchBox--->
 
-        <div id="search-box" class="search-box absolute w-auto flex flex-col mt-10 pb-4 shadow-lg p-4 -translate-x-16 -translate-y-52 opacity-0">
+        <div id="search-box" class="search-box absolute w-auto flex flex-col mt-10 pb-4 shadow-lg p-4 -translate-x-16 -translate-y-52 opacity-0 bg-white">
         
         
             <div class="rounded bg-white w-52 shadow place-center flex ">
