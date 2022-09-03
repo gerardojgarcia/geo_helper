@@ -6,6 +6,7 @@ import ShowCase from './components/ShowCase.vue';
 import Partners from './components/Partners.vue';
 import Topics from './components/Topics.vue';
 import Tutoring from './components/Tutoring.vue';
+import Features from './components/Features.vue';
 
 export default {
 
@@ -15,7 +16,8 @@ components: {
     ShowCase,
     Partners,
     Topics,
-    Tutoring
+    Tutoring,
+    Features
 },
 props: {
   name: String
@@ -146,7 +148,7 @@ created() {
               <ShowCase/>
         
         
-            <Partners/>
+            <Features/>
             <Topics :topics='topics'/>
             <Tutoring/>
         </div>

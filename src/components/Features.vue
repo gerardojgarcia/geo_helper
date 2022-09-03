@@ -1,0 +1,47 @@
+<script>
+import FeaturesCard from "./FeaturesCard.vue";
+    export default {
+    name: "Features",
+    props: {
+        icon: String,
+        data: String,
+        title: String
+    },
+    components: { FeaturesCard }
+}
+    </script>
+    
+    <template>
+    
+        <div class="w-full bg-teal-600 pb-16">
+            
+    
+    <h2 class="text-4xl text-white font-bold py-16">What you'll find inside</h2>
+    
+    
+            <!--Partners icon box-->
+    
+    
+            <div class="flex justify-center w-full px-8">
+            
+             
+            
+            <FeaturesCard icon="fa-solid fa-book" data="10 " title="Geology topics covered" />
+            <FeaturesCard icon="fa-solid fa-book" data="10 " title="Geology topics covered" />
+            <FeaturesCard icon="fa-solid fa-book" data="10 " title="Geology topics covered" />
+            <FeaturesCard icon="fa-solid fa-book" data="10 " title="Geology topics covered" />
+
+
+            </div>
+        
+        
+        
+        </div>
+    
+    
+    
+    
+    
+    
+    
+    </template>

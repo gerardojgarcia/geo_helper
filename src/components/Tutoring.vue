@@ -15,9 +15,9 @@
 <template>
 
 
-    <div class=" tutor-container w-full flex flex-col pb-32 bg-yellow-400 ">
+    <div class=" tutor-container w-full flex flex-row pb-4 bg-yellow-400 relative ">
     
-        <div class="tutor-info text-left flex flex-col">
+        <div class="tutor-info text-left flex flex-col m-16 pt-8">
         
         <div class="mt-8 mb-16">
         
@@ -30,15 +30,15 @@
         </div>
 
         <div class="tutor-form ml-8 w-full">
-            <form action="submit" class="flex flex-col w-2/5">
+            <form action="submit" class="flex flex-col w-full">
             
             <group>
-                <input type="text" name="first-name" placeholder="First Name" required>
-                <input type="text" name="last-name" placeholder="Last Name" required>
+                <input class="shadow-md" type="text" name="first-name" placeholder="First Name" required>
+                <input class="shadow-md" type="text" name="last-name" placeholder="Last Name" required>
             </group>
             <group>
-                <input type="text" name="email" placeholder="Email" required>
-                <input type="text" name="name" placeholder="Question" required>
+                <input class="shadow-md" type="text" name="email" placeholder="Email" required>
+                <input class="shadow-md" type="text" name="name" placeholder="Question" required>
             </group>
             
             
@@ -56,6 +56,8 @@
         
         
         </div>
+
+        <img class="w-1/2 z-10 -translate-y-32 ml-8 " src="/drawkit-grape-pack-illustration-2.svg" alt="A person studying">
     
     </div>
 

@@ -8,6 +8,21 @@ export default {
     props: {
         name: String,
         topics: Array
+    },
+    methods: {
+       topicLeft() {
+            const leftEl = document.getElementById('topics-box')
+
+
+                leftEl.scrollLeft -= 600
+
+       },
+       
+       topicRight(){
+        const rightEl = document.getElementById('topics-box')
+
+        rightEl.scrollLeft += 600
+       }
     }
 }
 </script>
@@ -16,7 +31,7 @@ export default {
 <template>
 
 
-    <div class="topics-container w-full flex flex-col align-center justify-center px-16 ">
+    <div class="topics-container w-full flex flex-col align-center justify-center px-16 pb-28">
     
         <!--Topics <Header-->
 
@@ -31,13 +46,13 @@ export default {
 
 
     <!-- Topics Card <Box-->
-<div class="flex flex-row w-full align-center justify-center items-center">
+<div class="flex flex-row w-full align-center justify-center items-center" >
     
             <div>
-                <button class="bg-white border-0 p-2"><i class="fa-solid fa-arrow-left text-2xl" id="topic-left"></i></button>
+                <button  class="bg-white border-0 p-2" @click="topicLeft"><i class="fa-solid fa-arrow-left text-2xl" ></i></button>
         </div>
     
-        <div class="topic-box w-5/6 flex flex-row w-full mx-2 my-16 py-8 overflow-x-auto self-center"  >
+        <div class="topic-box w-5/6 flex flex-row w-full mx-2 my-16 py-8 overflow-x-auto self-center scroll-smooth" id="topics-box" >
     
     
     
@@ -52,7 +67,7 @@ export default {
         </div>
     
         <div>
-            <button class="bg-white border-0 p-2"><i class="fa-solid fa-arrow-right text-2xl" id="topic-right"></i></button>
+            <button class="bg-white border-0 p-2"  @click="topicRight"><i class="fa-solid fa-arrow-right text-2xl" ></i></button>
         </div>
     
     
