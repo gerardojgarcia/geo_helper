@@ -5,6 +5,7 @@ import Nav from './components/Nav.vue';
 import ShowCase from './components/ShowCase.vue';
 import Partners from './components/Partners.vue';
 import Topics from './components/Topics.vue';
+import Tutoring from './components/Tutoring.vue';
 
 export default {
 
@@ -13,7 +14,8 @@ components: {
     Nav,
     ShowCase,
     Partners,
-    Topics
+    Topics,
+    Tutoring
 },
 props: {
   name: String
@@ -47,8 +49,8 @@ created() {
   },
 
   {
-    id: 2,
-    topic: 'Volcanoes',
+    id: 3,
+    topic: 'Tectonics',
     description: "Everything you wanted to knmow about minerals",
     image: '/pexels-pixabay-73830.jpg',
     link: "weebly.com"
@@ -56,13 +58,61 @@ created() {
   },
 
   {
-    id: 2,
+    id: 4,
+    topic: 'Igneous Rocks',
+    description: "Everything you wanted to knmow about minerals",
+    image: '/img2.png',
+    link: "weebly.com"
+
+  },
+  {
+    id: 5,
     topic: 'Volcanoes',
     description: "Everything you wanted to knmow about minerals",
     image: '/img2.png',
     link: "weebly.com"
 
-  }
+  },
+  {
+    id: 6,
+    topic: 'Sedimentary Rocks',
+    description: "Everything you wanted to knmow about minerals",
+    image: '/img2.png',
+    link: "weebly.com"
+
+  },
+  {
+    id: 7,
+    topic: 'Metamorphic Rocks',
+    description: "Everything you wanted to knmow about minerals",
+    image: '/img5.png',
+    link: "weebly.com"
+
+  },
+  {
+    id: 8,
+    topic: 'Earthquakes',
+    description: "Everything you wanted to knmow about minerals",
+    image: '/img2.png',
+    link: "weebly.com"
+
+  },
+  {
+    id: 9,
+    topic: 'Mountains',
+    description: "Everything you wanted to knmow about minerals",
+    image: '/img2.png',
+    link: "weebly.com"
+
+  },
+  {
+    id: 10,
+    topic: 'Desert Geology',
+    description: "Everything you wanted to knmow about minerals",
+    image: '/img2.png',
+    link: "weebly.com"
+
+  },
 
 
 
@@ -98,6 +148,7 @@ created() {
         
             <Partners/>
             <Topics :topics='topics'/>
+            <Tutoring/>
         </div>
       </template>
 

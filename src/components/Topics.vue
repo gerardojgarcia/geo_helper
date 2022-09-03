@@ -16,7 +16,7 @@ export default {
 <template>
 
 
-    <div class="container w-full flex flex-col align-center justify-center px-16 overflow-hidden">
+    <div class="topics-container w-full flex flex-col align-center justify-center px-16 ">
     
         <!--Topics <Header-->
 
@@ -31,27 +31,35 @@ export default {
 
 
     <!-- Topics Card <Box-->
+<div class="flex flex-row w-full align-center justify-center items-center">
     
-    <div class="topic-box w-5/6 flex flex-row w-full mx-2 my-16 py-8 overflow-x-auto self-center"  >
+            <div>
+                <button class="bg-white border-0 p-2"><i class="fa-solid fa-arrow-left text-2xl" id="topic-left"></i></button>
+        </div>
     
-    
-        
-   <div class="flex flex-row " v-for="topic in topics" :key="id">
-       
-       <TopicsCard  :topic="topic"/>
-       
-   </div>
+        <div class="topic-box w-5/6 flex flex-row w-full mx-2 my-16 py-8 overflow-x-auto self-center"  >
     
     
     
-    </div>    
+       <div class="flex flex-row " v-for="topic in topics" :key="id">
+    
+           <TopicsCard  :topic="topic"/>
+    
+       </div>
+    
+    
+    
+        </div>
+    
+        <div>
+            <button class="bg-white border-0 p-2"><i class="fa-solid fa-arrow-right text-2xl" id="topic-right"></i></button>
+        </div>
     
     
     
     
-    
-    
-    </div>
+        </div>
+</div>
 
 
 

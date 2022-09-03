@@ -14,7 +14,7 @@ export default {
 <template>
 
 
-  <div class="container w-full flex justify-center align-center pb-16">
+  <div class="showcase-container w-full flex justify-center align-center pb-16">
   <div class="showcase-info w-1/2 text-left pl-24 mt-24 pr-8">
     <h1 class="text-6xl font-bold py-4 "><span class="text-yellow-500">Access Geology help</span> from anywhere and anytime</h1>
     

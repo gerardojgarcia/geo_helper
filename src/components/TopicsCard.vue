@@ -16,9 +16,9 @@ import AppButton from './AppButton.vue';
 <template>
     
     
-        <div class="topic-card rounded-lg flex flex-col shadow-md hover:shadow-xl mx-4 text-left ">
+        <div class="topic-card rounded-lg flex flex-col shadow-md hover:shadow-xl mx-4 text-left " >
         
-        <div class="mb-4 pb-4"><img :src="topic.image" alt="" class="topic-img rounded-lg" ></div>
+       <img :src="topic.image" alt="" class="topic-img rounded-lg mb-4 pb-4" >
         <strong class="mx-4 text-3xl" >{{topic.topic}}</strong>
         <p class="mx-8 my-8">{{topic.description}}</p>
 
@@ -39,15 +39,26 @@ import AppButton from './AppButton.vue';
 </template>
 
 
-<style>
+<style scoped>
 
         .topic-card {
             width: 300px;
-            min-height: 500px;
+            max-height: 550px;
            
 
             
 
+        }
+
+        .topic-card>p {
+            border-bottom: 2px solid grey;
+            padding-bottom: 50px;
+        }
+
+
+        .topic-img {
+            height: 50%;
+            width: 100%
         }
 
        
