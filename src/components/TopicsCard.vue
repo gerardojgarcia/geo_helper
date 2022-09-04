@@ -16,7 +16,7 @@ import AppButton from './AppButton.vue';
 <template>
     
     
-        <div class="topic-card rounded-lg flex flex-col shadow-md hover:shadow-xl mx-4 text-left " >
+        <div class="topic-card rounded-lg flex flex-col shadow-md hover:shadow-xl mx-4 text-left cursor-pointer " >
         
        <img :src="topic.image" alt="" class="topic-img rounded-lg mb-4 pb-4" >
         <strong class="mx-4 text-3xl" >{{topic.topic}}</strong>

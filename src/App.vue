@@ -7,6 +7,8 @@ import Partners from './components/Partners.vue';
 import Topics from './components/Topics.vue';
 import Tutoring from './components/Tutoring.vue';
 import Features from './components/Features.vue';
+import Community from './components/Community.vue';
+import Footer from './components/Footer.vue';
 
 export default {
 
@@ -17,7 +19,9 @@ components: {
     Partners,
     Topics,
     Tutoring,
-    Features
+    Features,
+    Community,
+    Footer
 },
 props: {
   name: String
@@ -45,7 +49,7 @@ created() {
     id: 2,
     topic: 'Minerals',
     description: "Everything you wanted to knmow about minerals",
-    image: '/img2.png',
+    image: '/pexels-pixabay-56030.jpg',
     link: "weebly.com"
 
   },
@@ -54,7 +58,7 @@ created() {
     id: 3,
     topic: 'Tectonics',
     description: "Everything you wanted to knmow about minerals",
-    image: '/pexels-pixabay-73830.jpg',
+    image: '/img6.png',
     link: "weebly.com"
 
   },
@@ -63,7 +67,7 @@ created() {
     id: 4,
     topic: 'Igneous Rocks',
     description: "Everything you wanted to knmow about minerals",
-    image: '/img2.png',
+    image: '/img3.png',
     link: "weebly.com"
 
   },
@@ -71,7 +75,7 @@ created() {
     id: 5,
     topic: 'Volcanoes',
     description: "Everything you wanted to knmow about minerals",
-    image: '/img2.png',
+    image: '/pexels-pixabay-73830.jpg',
     link: "weebly.com"
 
   },
@@ -79,7 +83,7 @@ created() {
     id: 6,
     topic: 'Sedimentary Rocks',
     description: "Everything you wanted to knmow about minerals",
-    image: '/img2.png',
+    image: '/img6.png',
     link: "weebly.com"
 
   },
@@ -95,7 +99,7 @@ created() {
     id: 8,
     topic: 'Earthquakes',
     description: "Everything you wanted to knmow about minerals",
-    image: '/img2.png',
+    image: '/img8.png',
     link: "weebly.com"
 
   },
@@ -103,7 +107,7 @@ created() {
     id: 9,
     topic: 'Mountains',
     description: "Everything you wanted to knmow about minerals",
-    image: '/img2.png',
+    image: '/pexels-eberhard-grossgasteiger-1670187.jpg',
     link: "weebly.com"
 
   },
@@ -151,6 +155,8 @@ created() {
             <Features/>
             <Topics :topics='topics'/>
             <Tutoring/>
+            <Community/>
+            <Footer/>
         </div>
       </template>
 

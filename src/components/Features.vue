@@ -26,10 +26,10 @@ import FeaturesCard from "./FeaturesCard.vue";
             
              
             
-            <FeaturesCard icon="fa-solid fa-book" data="10 " title="Geology topics covered" />
-            <FeaturesCard icon="fa-solid fa-book" data="10 " title="Geology topics covered" />
-            <FeaturesCard icon="fa-solid fa-book" data="10 " title="Geology topics covered" />
-            <FeaturesCard icon="fa-solid fa-book" data="10 " title="Geology topics covered" />
+            <FeaturesCard icon="fa-solid fa-book" data="10" title="Geology topics covered" />
+            <FeaturesCard icon="fa-solid fa-note-sticky" data="1K" title="Students accessed information" />
+            <FeaturesCard icon="fa-solid fa-earth-americas" data="100" title="Reference images, geologic maps & more" />
+            
 
 
             </div>
