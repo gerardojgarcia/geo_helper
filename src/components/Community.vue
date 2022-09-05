@@ -42,7 +42,7 @@ export default {
                 
             </div>
         </div>
-        <div class="community-cards max-w-lg flex flex-wrap justify-center ml-2 mt-16">
+        <div class="community-cards max-w-lg flex flex-wrap justify-center ml-2 mt-24">
 
             <div class="community-card w-52 h-52 flex shadow-md flex-col items-center mr-4 cursor-pointer hover:shadow-xl">
             
