@@ -31,7 +31,7 @@ export default {
 <template>
 
 
-    <div class="topics-container w-full flex flex-col align-center justify-center px-16 pb-28">
+    <div id="topics" class="topics-container w-full flex flex-col align-center justify-center px-16 pb-28">
     
         <!--Topics <Header-->
 
@@ -40,7 +40,7 @@ export default {
         <p class="text-yellow-600 text-left ml-8">Earth Science Topics</p>
 
 
-        <h2 class="text-5xl text-left ml-8">Explore Topics</h2>
+        <h2 class="text-5xl text-left ml-8 text-shadow-lg">Explore Topics</h2>
      
     </div>
 

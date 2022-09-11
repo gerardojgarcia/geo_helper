@@ -144,20 +144,26 @@ created() {
             <Nav/>
         
         
-            <AppButton name="Login/Register"/>
+            <AppButton name="Contact"/>
               </header>
         
-        
-        
-              <ShowCase/>
-        
-        
-            <Features/>
-            <Topics :topics='topics'/>
-            <Tutoring/>
-            <Community/>
-            <Footer/>
+
+
+                <router-view v-slot="{Component}">
+                
+                  <transition name="fade">
+    <component :is="Component" />
+  </transition>
+                
+                
+                </router-view>
+                <div>
+                  <Footer/>
+                </div>
+                
         </div>
+
+        
       </template>
 
 

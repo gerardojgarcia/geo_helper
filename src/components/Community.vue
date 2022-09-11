@@ -17,7 +17,7 @@ export default {
         <div class="flex flex-col w-1/2">
             <div class="community-text text-left ml-16 mt-24">
 
-                <h4 class="text-6xl mb-4">Earth Science Deep Dives</h4>
+                <h4 class="text-6xl mb-4 text-shadow-lg">Earth Science Deep Dives</h4>
                 <p class="mb-16 text-gray-500 text-xl w-2/5">Different topics of interest that go beyond general geology. Satisfy your curiosity and get answers to questions you can't find anywhere else. </p>
 
 

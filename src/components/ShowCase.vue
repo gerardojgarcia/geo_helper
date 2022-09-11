@@ -14,14 +14,14 @@ export default {
 <template>
 
 
-  <div class="showcase-container w-full flex justify-center align-center pb-24">
+  <div class="showcase-container w-full flex justify-center align-center pb-32">
   <div class="showcase-info w-1/2 text-left pl-24 mt-24 pr-8">
     <h1 class="text-6xl font-bold py-4 "><span class="text-yellow-500">Access Geology help</span> from anywhere and anytime</h1>
     
     <p class="py-4">A learning system base on formalized teaching but with the help of electornic recourse for your knowledge.</p>
   
   
-      <AppButton name='Get Started'/>
+      <AppButton name='Explore Topics' link='#topics' class="mt-16"/>
   
   </div>
 
@@ -29,7 +29,7 @@ export default {
   
   
   
-    <img src="/public/showcase-img.svg" alt="" class="w-3/4 place-center self-center">
+    <img src="/showcase-img.svg" alt="" class="w-3/4 place-center self-center">
   
   
   </div>

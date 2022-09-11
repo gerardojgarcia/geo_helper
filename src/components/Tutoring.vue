@@ -21,7 +21,7 @@
         
         <div class="mt-8 mb-16">
         
-            <h3 class="text-5xl ml-8 mb-2">Get Online Help Right Now!</h3>
+            <h3 class="text-5xl ml-8 mb-2 text-shadow-lg">Get Online Help Right Now!</h3>
 
             <p class="text-lg ml-8" >Submit your questions and get exact help you need.</p>
         

@@ -26,7 +26,7 @@ import AppButton from './AppButton.vue';
         <div class="mt-auto mb-8 self-center">
 
         
-        <a :href="topic.link" class="text-white rounded-sm bg-teal-500 shadow-md px-4 py-2 hover:bg-teal-400 border-0 hover:shadow-xl hover:text-white ">Explore</a>
+        <router-link :to="topic.link" class="text-white rounded-sm bg-teal-500 shadow-md px-4 py-2 hover:bg-teal-400 border-0 hover:shadow-xl hover:text-white ">Explore</router-link>
         
     </div>
 

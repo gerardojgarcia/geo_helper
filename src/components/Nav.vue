@@ -29,12 +29,12 @@ import NavSearch from './NavSearch.vue';
             
             </div>
         
-                <div class="navlinks text-gray-400">
+                <div class="navlinks text-gray-500">
                 
                 
-               <a href="#">Home</a>
-               <a href="#">About</a>
-               <a href="#">Courses</a>
+               <router-link to="/">Home</router-link>
+               <router-link to="Earth">Courses</router-link>
+             
                <a href="#">Tutoring</a>
                <a href="#">FAQ</a>
                 

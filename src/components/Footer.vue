@@ -31,7 +31,7 @@
 
         <div class="contact flex flex-col w-1/2 justify-start ">
         
-            <div class="mt-16 self-start"><strong class=" text-5xl text-white ">Get in Touch</strong></div>
+            <div class="mt-16 self-start"><strong class=" footer-strong text-5xl text-white ">Get in Touch</strong></div>
 
             <div class="flex items-center">
                 <form action="submit ">
@@ -65,6 +65,9 @@
         background-color: var(--secondary-clr);
     }
 
+    .footer-strong {
+        text-shadow: 2px 2px 5px black;
+    }
 
     .social-media>i {
         font-size: 1.7rem;
