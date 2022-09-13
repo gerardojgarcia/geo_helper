@@ -1,50 +1,36 @@
 <script>
+import FlashCards from '../components/FlashCards.vue'
 export default {
-    name: 'Earth',
-
-
+    name: "Earth",
     methods: {
-        answer(){
-            const answerEl = document.getElementById('answer')
-
-            answerEl.innerText = "That's correct!"
-
-            answerEl.classList.remove('red')
-            answerEl.classList.add('green')
-
+        answer() {
+            const answerEl = document.getElementById("answer");
+            answerEl.innerText = "That's correct!";
+            answerEl.classList.remove("red");
+            answerEl.classList.add("green");
         },
-
         wrongAnswer() {
-            const answerEl = document.getElementById('answer')
-
-            answerEl.classList.remove('green')
-            answerEl.classList.add('red')
-
-            answerEl.innerText = "Sorry, keep on studying!"
-            
+            const answerEl = document.getElementById("answer");
+            answerEl.classList.remove("green");
+            answerEl.classList.add("red");
+            answerEl.innerText = "Sorry, keep on studying!";
             //answerEl.classList.add('red')
         },
-        answer2(){
-            const answerEl = document.getElementById('answer2')
-
-            answerEl.innerText = "That's correct!"
-
-            answerEl.classList.remove('red')
-            answerEl.classList.add('green')
-
+        answer2() {
+            const answerEl = document.getElementById("answer2");
+            answerEl.innerText = "That's correct!";
+            answerEl.classList.remove("red");
+            answerEl.classList.add("green");
         },
-
         wrongAnswer2() {
-            const answerEl = document.getElementById('answer2')
-
-            answerEl.classList.remove('green')
-            answerEl.classList.add('red')
-
-            answerEl.innerText = "Sorry, keep on studying!"
-            
+            const answerEl = document.getElementById("answer2");
+            answerEl.classList.remove("green");
+            answerEl.classList.add("red");
+            answerEl.innerText = "Sorry, keep on studying!";
             //answerEl.classList.add('red')
         }
-    }
+    },
+    components: { FlashCards }
 }
 
 
@@ -284,6 +270,9 @@ export default {
             <p><span>Q: </span>Why is Earth round?</p>
             <p><span>A: </span>Gravity forces objects the size of Earth to be nearly spherical (the most compact shape,
                 minimize the distance of points form the center</p>
+
+
+
             <p><span>Q: </span> what is the Earth’s Magnetic Field? What Causes the Aurora?</p>
             <p><span>A: </span> The magnetic field of Earth is a region of space affected by the magnetic for of Earth
                 Charged particles comprising solar wind are pulled toward the poles by the magnetic field. There they
@@ -339,7 +328,7 @@ export default {
                 Circulation of iron atoms in the liquid outer core generates the magnetic filed of the Earth.
 
             </p>
-
+<img  src="/chapter1/FIG01.15ab_ESSGEO4_CH01.jpg" alt="Image of the layers of the earth" width="500px" >
             <p><span>Q: </span>What is the difference between the lithosphere and the asthenosphere? Which layer is
                 softer and flows more easily? At what depth does the lithosphere-asthenosphere boundary occur? Is this
                 above or below the Moho? Is the asthenosphere entirely liquid?
@@ -394,6 +383,8 @@ export default {
 
         </div>
 
+        <FlashCards/>
+
 
 
 
@@ -411,7 +402,9 @@ export default {
 <style scoped>
 .earth-hero {
     background-image: url('/pexels-pixabay-87651.jpg');
-    height: 75vh;
+        height: 75vh;
+        background-repeat: no-repeat;
+        background-size: cover;
 }
 
 p {
