@@ -23,7 +23,7 @@
         
             <h3 class="text-5xl ml-8 mb-2 text-shadow-lg">Get Online Help Right Now!</h3>
 
-            <p class="text-lg ml-8" >Submit your questions and get exact help you need.</p>
+            <p class="text-lg ml-8" >Submit your questions and get the exact help you need.</p>
         
         
         
@@ -57,7 +57,7 @@
         
         </div>
 
-        <img class="w-1/2 z-10 -translate-y-32 ml-8 " src="/drawkit-grape-pack-illustration-2.svg" alt="A person studying">
+        <div class="tutor-img z-10 -translate-y-32 translate-x-42 ml-8 "> <img  src="/tutoring1.svg" alt="" ></div>
     
     </div>
 
@@ -81,6 +81,10 @@
     background-color: #f9b83b;
 }
 
+.tutor-img {
+    width: 100vh;
+    height: 50vh;
+}
 
 
 

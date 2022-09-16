@@ -71,7 +71,7 @@ export default {
     <div>
         <div class="ml-16 mt-16 mb-16"><strong class="text-7xl">FlashCards</strong></div>
     
-        <div class="card-box flex flex-row flex-wrap w-3/4 m-auto justify-center" >
+        <div class="card-box flex flex-row flex-wrap w-full lg:w-3/4 m-auto justify-center" >
 
       
         

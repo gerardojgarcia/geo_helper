@@ -84,7 +84,7 @@
  the most convenient way for classifying minerals is to group them according to their carbonates, and native metals. 
 </p>
 
-<img src="/chapter2/" alt="">
+<img src="/chapter2/FIG02.21d_ESSGEO4_CH02.jpg" alt="">
 
     <p>silicate minerals are the most common minerals on Earth, the silicon-oxygen building block of silicate minerals. 
 </p>

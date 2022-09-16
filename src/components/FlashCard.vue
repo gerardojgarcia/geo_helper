@@ -51,8 +51,8 @@
         }
 
         .card:hover {
-            scale: 1.2;
-            transition: all 100ms ease-in;
+            
+            transition: all 300ms ease-in;
         }
     .card:hover .term {
         opacity: 1;

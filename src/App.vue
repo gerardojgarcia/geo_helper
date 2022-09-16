@@ -3,7 +3,7 @@
 import AppButton from './components/AppButton.vue'
 import Nav from './components/Nav.vue';
 import ShowCase from './components/ShowCase.vue';
-import Partners from './components/Partners.vue';
+
 import Topics from './components/Topics.vue';
 import Tutoring from './components/Tutoring.vue';
 import Features from './components/Features.vue';
@@ -16,7 +16,7 @@ components: {
     AppButton,
     Nav,
     ShowCase,
-    Partners,
+    
     Topics,
     Tutoring,
     Features,
@@ -151,7 +151,7 @@ created() {
 
                 <router-view v-slot="{ Component }">
                 
-                  <Transition name="slide-fade">
+                  <Transition name="fade">
                   <component :is="Component" />
                   </Transition>
                 
@@ -169,17 +169,13 @@ created() {
 
 
 <style>
-  .slide-fade-enter-active {
-  transition: all 0.3s ease-out;
+  .fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s ease;
 }
 
-.slide-fade-leave-active {
-  transition: all 0.5s cubic-bezier(1, 0.5, 0.8, 1);
-}
-
-.slide-fade-enter-from,
-.slide-fade-leave-to {
-  transform: translateX(20px);
+.fade-enter-from,
+.fade-leave-to {
   opacity: 0;
 }
 

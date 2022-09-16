@@ -4,7 +4,7 @@
   import AppButton from '../components/AppButton.vue'
   import Nav from '../components/Nav.vue';
   import ShowCase from '../components/ShowCase.vue';
-  import Partners from '../components/Partners.vue';
+ 
   import Topics from '../components/Topics.vue';
   import Tutoring from '../components/Tutoring.vue';
   import Features from '../components/Features.vue';
@@ -17,7 +17,7 @@
       AppButton,
       Nav,
       ShowCase,
-      Partners,
+      
       Topics,
       Tutoring,
       Features,

@@ -24,10 +24,7 @@ import NavSearch from './NavSearch.vue';
     <div>
         <nav class="flex flex-row w-auto">
 
-            <div>
-            <img src="/" alt="" class="logo">
-            
-            </div>
+           
         
                 <div class="navlinks text-gray-500">
                 
