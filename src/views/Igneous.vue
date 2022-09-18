@@ -1,6 +1,13 @@
 <script>
+    import Quiz from '../components/Quiz.vue'
+
+
     export default {
-        name: 'Igneousd',
+        name: 'Igneous',
+
+        components: {
+            Quiz
+        },
     
     
         methods: {
@@ -44,7 +51,89 @@
                 
                 //answerEl.classList.add('red')
             }
+        },
+        data(){
+        return {
+
+            quiz: []
         }
+    },
+
+    created(){
+        this.quiz = [
+            {
+                id: 1, 
+                question: "Igneous Rocks _____",
+                answerid: 'quiz-answer',
+                answer1: "Are formed thorug hte freezing of melt",
+                answer2: " All are correct  ",
+                answer3: "Are the most common type",
+                answer4: "can be produced at the4 ssurface of the earth as well as deep below the surface "
+
+            },
+            {
+                id: 2, 
+                question: "Very early in Earth's hsitory, it was so thot hat the sruface was likely entirely molten",
+                answerid: 'quiz-answer2',
+                answer1: "False",
+                answer2: "True",
+                answer3: "",
+                answer4: ""
+
+            },
+            {
+                id: 3, 
+                question: "Which type of magma has the greatest silica content",
+                answerid: 'quiz-answer3',
+                answer1: "mafic",
+                answer2: "Felsic",
+                answer3: "intermediate",
+                answer4: "ultramafic",
+                method: "@click='correct(quiz.answerid)'"
+
+            },
+            {
+                id: 4, 
+                question: "The formation of magma within the Earth is NOT caused by which of the following processes?",
+                answerid: 'quiz-answer4',
+                answer1: "decompression (drop in pressure)",
+                answer2: "Los off volatiles to the atmosphre",
+                answer3: "transfer of heat form adjacent magma or very hot rocks",
+                answer4: "Additon of volatiles"
+
+            },
+            {
+                id: 5, 
+                question: "Compared to magic igneous rocks, all felsic igneous rokcs _____",
+                answerid: 'quiz-answer5',
+                answer1: "cool and solidify more quickly",
+                answer2: "Solidify at lower tempereatures",
+                answer3: "cool and solidify more slowly",
+                answer4: "solidify at higher temperatures"
+
+            },
+            {
+                id: 6, 
+                question: "Viscosity depends on ______",
+                answerid: 'quiz-answer6',
+                answer1: "tmeprature",
+                answer2: "All are correct",
+                answer3: "Volatile content",
+                answer4: "silica content"
+
+            },
+            {
+                id: 7, 
+                question: "In Bowen's Reaction Series, which mineral crystallizes first?",
+                answerid: 'quiz-answer7',
+                answer1: "Plagioclase",
+                answer2: "olivine",
+                answer3: "Pyroxene",
+                answer4: "quartz"
+
+            },
+        ]
+    },
     }
     
     
@@ -111,10 +200,10 @@
                         <strong class="text-4xl mt-8 ">Knowledge Check</strong>
     
                         <div class="w-full flex flex-col  text-center  mb-16 ">
-                            <p class="mt-2 text-lg ml-8">What gas is the atmosphere primarily composed of?</p>
+                            <p class="mt-2 text-lg ml-8">Volcanoes that do not occur at a plate boundary are known as ___</p>
                             <p id="answer2" class="text-xl"></p>
                             <div class=" w-1/2 flex flex-row justify-center items-center m-auto">
-                            <button class="right text-white rounded-sm bg-teal-500 shadow-md px-4 py-2 hover:bg-teal-400 border-0 hover:shadow-xl hover:text-white mr-4" @click="answer2">Nitrogen</button> <button class="wrong text-white rounded-sm bg-teal-500 shadow-md px-4 py-2 hover:bg-teal-400 border-0 hover:shadow-xl hover:text-white" @click="wrongAnswer2">Oxygen</button></div>
+                            <button class="right text-white rounded-sm bg-teal-500 shadow-md px-4 py-2 hover:bg-teal-400 border-0 hover:shadow-xl hover:text-white mr-4" @click="answer2">Hot Spot</button> <button class="wrong text-white rounded-sm bg-teal-500 shadow-md px-4 py-2 hover:bg-teal-400 border-0 hover:shadow-xl hover:text-white" @click="wrongAnswer2">Continental Rifts</button></div>
                         </div>
                     
                     
@@ -160,10 +249,10 @@
                         <strong class="text-4xl mt-8 ">Knowledge Check</strong>
     
                         <div class="w-full flex flex-col text-center  mb-16 ">
-                            <p class="mt-2 text-xl">Which is more dense?</p>
+                            <p class="mt-2 text-xl">Bombs, ash and cinders are all examples of _____</p>
                           <p id="answer" class="text-xl"></p>
                             <div class=" w-1/2 flex flex-row justify-center items-center m-auto">
-                            <button class="right text-white rounded-sm bg-teal-500 shadow-md px-4 py-2 hover:bg-teal-400 border-0 hover:shadow-xl hover:text-white mr-4" @click="answer">Oceanic Crust</button> <button class="wrong text-white rounded-sm bg-teal-500 shadow-md px-4 py-2 hover:bg-teal-400 border-0 hover:shadow-xl hover:text-white" @click="wrongAnswer">Continental Crust</button></div>
+                            <button class="right text-white rounded-sm bg-teal-500 shadow-md px-4 py-2 hover:bg-teal-400 border-0 hover:shadow-xl hover:text-white mr-4" @click="wrongAnswer">Volatiles</button> <button class="wrong text-white rounded-sm bg-teal-500 shadow-md px-4 py-2 hover:bg-teal-400 border-0 hover:shadow-xl hover:text-white" @click="answer">Pyroclastic Debris</button></div>
                         </div>
                     
                     
@@ -249,7 +338,7 @@
     
     
     
-    
+    <Quiz :quiz="quiz"/>
     
     
         </div>

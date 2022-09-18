@@ -24,7 +24,17 @@ const router = createRouter({
         { path: '/igneous', name: 'Igneous', component: Igneous},
         { path: '/sedimentary', name: 'Sedimentary', component: Sedimentary},
 
-    ]
+    ],
+
+    scrollBehavior (to, from, savedPosition){
+        return savedPosition || new Promise((resolve)=>{
+            setTimeout(()=> resolve({top:0, behavior: 'auto'}), 20)
+            
+        })
+        
+
+       
+    }
     
 
 })

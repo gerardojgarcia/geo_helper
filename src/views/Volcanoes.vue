@@ -59,8 +59,8 @@
     
             <div class="volcano-hero bg-fixed pb-52">
                 <div class="w-1/2 ml-16 mt-32 text-white">
-                    <h1 class="text-7xl text-shadow-lg">volcanos</h1>
-                    <p class="w-1/2 pl-2 mt-8 text-lg">Everything you wanted to know about volcanos.</p>
+                    <h1 class="text-7xl text-shadow-lg">Volcanoes</h1>
+                    <p class="w-1/2 pl-2 mt-8 text-lg">Everything you wanted to know about volcanoes.</p>
                 </div>
     
     

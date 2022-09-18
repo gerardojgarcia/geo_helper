@@ -151,7 +151,7 @@ created() {
 
                 <router-view v-slot="{ Component }">
                 
-                  <Transition name="fade">
+                  <Transition name="fade" >
                   <component :is="Component" />
                   </Transition>
                 
@@ -171,7 +171,7 @@ created() {
 <style>
   .fade-enter-active,
 .fade-leave-active {
-  transition: opacity 0.5s ease;
+  transition: opacity 0.1s ease;
 }
 
 .fade-enter-from,
