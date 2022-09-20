@@ -15,7 +15,7 @@
 <template>
 
 
-    <div class=" tutor-container w-full flex flex-row pb-4 bg-yellow-400 relative ">
+    <div class=" tutor-container w-full flex flex-col md:flex-row pb-4 bg-yellow-400 relative ">
     
         <div class="tutor-info text-left flex flex-col m-16 pt-8">
         
@@ -57,7 +57,7 @@
         
         </div>
 
-        <div class="tutor-img z-10 -translate-y-32 translate-x-42 ml-8 "> <img  src="/tutoring1.svg" alt="" ></div>
+        <div class="tutor-img z-10 lg:-translate-y-32 lg:translate-x-42 md:ml-8 "> <img  src="/tutoring1.svg" alt="" ></div>
     
     </div>
 
@@ -86,6 +86,11 @@
     height: 50vh;
 }
 
+@media (max-width: 800px){
+    .tutor-img {
+        width: 50vh;
+    }
+}
 
 
 </style>

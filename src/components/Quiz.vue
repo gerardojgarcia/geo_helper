@@ -10,7 +10,8 @@ export default {
     methods: {
         correct(answerid) {
             const answerEl = document.getElementById(answerid);
-            answerEl.innerText = "That's correct!";
+            answerEl.innerText = "";
+            answerEl.innerText = "That's Correct!"
             answerEl.classList.remove("red");
             answerEl.classList.add("green");
             console.log(this.quiz.answerid)
@@ -69,13 +70,15 @@ button {
     background-color: #14b8a6;
     margin-right: 1rem;
     margin-bottom: 1rem;
-    box-shadow: 0px 2px 10px 1px rgba(0, 0, 0, 0.289);
+    box-shadow: 0px 2px 5px 1px rgba(0, 0, 0, 0.289);
     border: none;
+    color: white;
+    transition: all 300ms;
 
 }
 
 button:hover{
-    box-shadow: 0px 2px 5px black;
+    box-shadow: 0px 2px 15px 2px rgba(0, 0, 0, 0.38);
 }
 
 

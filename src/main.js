@@ -1,5 +1,6 @@
 import { createApp } from 'vue'
 import { createRouter, createWebHistory} from 'vue-router'
+import { VueScrollTo } from 'vue-scrollto'
 import './style.css'
 import './index.css'
 import Earth from './views/Earth.vue'
@@ -16,29 +17,29 @@ const router = createRouter({
     history: createWebHistory(),
     routes: [
         { path: '/', name: 'Home', component: Home},
-        { path: '/earth', name: 'Earth', component: Earth},
-        { path: '/minerals', name: 'Minerals', component: Minerals},
-        { path: '/tectonics', name: 'Tectonics', component: Tectonics},
+        { path: '/earth', name: 'earth', component: Earth},
+        { path: '/minerals', name: 'minerals', component: Minerals},
+        { path: '/tectonics', name: 'tectonics', component: Tectonics},
         
-        { path: '/volcanoes', name: 'Volcanoes', component: Volcanoes},
-        { path: '/igneous', name: 'Igneous', component: Igneous},
-        { path: '/sedimentary', name: 'Sedimentary', component: Sedimentary},
+        { path: '/volcanoes', name: 'volcanoes', component: Volcanoes},
+        { path: '/igneous', name: 'igneous', component: Igneous},
+        { path: '/sedimentary', name: 'sedimentary', component: Sedimentary},
 
     ],
 
     scrollBehavior (to, from, savedPosition){
-        return savedPosition || new Promise((resolve)=>{
-            setTimeout(()=> resolve({top:0, behavior: 'auto'}), 20)
-            
-        })
-        
-
-       
-    }
+        if (to.hash) {
+            return {
+                el:  to.hash
+            }
+          } else {
+            return { top: 0 }
+          }
+        },
     
 
 })
 
 
 
-createApp(App).use(router).mount('#app')
+createApp(App).use(router, VueScrollTo).mount('#app')

@@ -2,6 +2,9 @@
 import FlashCards from '../components/FlashCards.vue'
 import FlashCard from '../components/FlashCard.vue'
 import Quiz from '../components/Quiz.vue';
+import ToTop from '../components/ToTop.vue';
+import ToBottom from '../components/ToBottom.vue';
+
 export default {
     name: "Earth",
 
@@ -28,8 +31,8 @@ export default {
                 id: 2, 
                 question: "According to the Big Bang Theory, our Universe is _____",
                 answerid: 'quiz-answer2',
-                answer1: "Expanding",
-                answer2: "contracting",
+                answer1: "Contracting",
+                answer2: "Expanding",
                 answer3: "static (unchanging)",
                 answer4: "None are correct"
 
@@ -122,7 +125,9 @@ export default {
     {
     FlashCards,
     FlashCard,
-    Quiz
+    Quiz,
+    ToTop,
+    ToBottom
 },
 
     
@@ -220,11 +225,11 @@ export default {
                
                 
 
-                <div class="question-box  w-96 m-auto backdrop-blur-sm rounded-lg flex flex-col shadow-lg justify-center items-center ">
+                <div class="question-box   m-auto backdrop-blur-sm rounded-lg flex flex-col shadow-lg justify-center items-center flex-wrap">
                     <strong class="text-4xl mt-8 ">Knowledge Check</strong>
 
                     <div class="w-full flex flex-col  text-center  mb-16 ">
-                        <p class="mt-2 text-lg ml-8">What gas is the atmosphere primarily composed of?</p>
+                        <p class="mt-2 text-lg ml-8 break-normal">What gas is the atmosphere primarily composed of?</p>
                         <p id="answer2" class="text-xl"></p>
                         <div class=" w-1/2 flex flex-row justify-center items-center m-auto">
                         <button class="right text-white rounded-sm bg-teal-500 shadow-md px-4 py-2 hover:bg-teal-400 border-0 hover:shadow-xl hover:text-white mr-4" @click="answer2">Nitrogen</button> <button class="wrong text-white rounded-sm bg-teal-500 shadow-md px-4 py-2 hover:bg-teal-400 border-0 hover:shadow-xl hover:text-white" @click="wrongAnswer2">Oxygen</button></div>
@@ -299,7 +304,7 @@ export default {
         <div class="earth-banner2 w-full bg-fixed flex flex-col text-white">
         
         
-            <div class="question-box  w-96 m-auto backdrop-blur-sm rounded-lg flex flex-col shadow-lg justify-center items-center ">
+            <div class="question-box  m-auto backdrop-blur-sm rounded-lg flex flex-col shadow-lg justify-center items-center ">
                     <strong class="text-4xl mt-8 ">Knowledge Check</strong>
 
                     <div class="w-full flex flex-col text-center  mb-16 ">
@@ -487,7 +492,8 @@ export default {
 
 
 
-
+        <ToTop />
+        <ToBottom/>
 
     </div>
 
@@ -531,6 +537,13 @@ span {
 
 .question-box {
     min-width: 500px;
+
+}
+
+@media (max-width: 800px){
+    .question-box {
+        max-width:350px; 
+    }
 }
 
 .green {

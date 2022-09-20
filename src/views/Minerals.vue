@@ -1,51 +1,38 @@
 <script>
+import ToTop from '../components/ToTop.vue'
+import ToBottom from '../components/ToBottom.vue';
     export default {
-        name: 'Minerals',
-    
-    
-        methods: {
-            answer(){
-                const answerEl = document.getElementById('answer')
-    
-                answerEl.innerText = "That's correct!"
-    
-                answerEl.classList.remove('red')
-                answerEl.classList.add('green')
-    
-            },
-    
-            wrongAnswer() {
-                const answerEl = document.getElementById('answer')
-    
-                answerEl.classList.remove('green')
-                answerEl.classList.add('red')
-    
-                answerEl.innerText = "Sorry, keep on studying!"
-                
-                //answerEl.classList.add('red')
-            },
-            answer2(){
-                const answerEl = document.getElementById('answer2')
-    
-                answerEl.innerText = "That's correct!"
-    
-                answerEl.classList.remove('red')
-                answerEl.classList.add('green')
-    
-            },
-    
-            wrongAnswer2() {
-                const answerEl = document.getElementById('answer2')
-    
-                answerEl.classList.remove('green')
-                answerEl.classList.add('red')
-    
-                answerEl.innerText = "Sorry, keep on studying!"
-                
-                //answerEl.classList.add('red')
-            }
+    name: "Minerals",
+    methods: {
+        answer() {
+            const answerEl = document.getElementById("answer");
+            answerEl.innerText = "That's correct!";
+            answerEl.classList.remove("red");
+            answerEl.classList.add("green");
+        },
+        wrongAnswer() {
+            const answerEl = document.getElementById("answer");
+            answerEl.classList.remove("green");
+            answerEl.classList.add("red");
+            answerEl.innerText = "Sorry, keep on studying!";
+            //answerEl.classList.add('red')
+        },
+        answer2() {
+            const answerEl = document.getElementById("answer2");
+            answerEl.innerText = "That's correct!";
+            answerEl.classList.remove("red");
+            answerEl.classList.add("green");
+        },
+        wrongAnswer2() {
+            const answerEl = document.getElementById("answer2");
+            answerEl.classList.remove("green");
+            answerEl.classList.add("red");
+            answerEl.innerText = "Sorry, keep on studying!";
+            //answerEl.classList.add('red')
         }
-    }
+    },
+    components: { ToTop, ToBottom }
+}
     
     
     
@@ -252,7 +239,8 @@
     
     
     
-    
+    <ToTop/>
+    <ToBottom/>
     
     
     

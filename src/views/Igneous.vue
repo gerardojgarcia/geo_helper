@@ -77,8 +77,7 @@
                 answerid: 'quiz-answer2',
                 answer1: "False",
                 answer2: "True",
-                answer3: "",
-                answer4: ""
+                
 
             },
             {
@@ -324,7 +323,7 @@
  </p>
 
 
- <p><span>Q: </span> Why does melting take place beneath the six of a mid-ocean ridge?</p>
+ <p><span>Q: </span> Why does melting take place beneath the axis of a mid-ocean ridge?</p>
  <p><span>A: </span> Hot asthenposhere rises to take the place of material that has poured to either side the axis. Closer to the surface, pressure is less than at the depth from which the atmospheric material rose, so the asthenosphere partially melts.</p>
     
     

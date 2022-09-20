@@ -22,7 +22,7 @@ import FeaturesCard from "./FeaturesCard.vue";
             <!--Partners icon box-->
     
     
-            <div class="flex justify-center w-full px-8">
+            <div class="flex flex-col md:flex-row justify-center items-center w-full md:px-8">
             
              
             

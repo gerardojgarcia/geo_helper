@@ -14,8 +14,8 @@
 <template>
 
 
-    <div class="footer-container w-full  flex flex-row pb-16 justify-center align-center">
-        <div class="footer-media flex flex-col w-1/2  items-center pt-16 ">
+    <div class="footer-container w-full  flex flex-col md:flex-row pb-16 justify-center align-center">
+        <div class="footer-media flex flex-col md:w-1/2  items-center pt-16 ">
             <img src="/geohandlogo.png" alt="Logo image for geo hand" class="logo w-32 mb-16">
             <div class="social-media">
             
@@ -29,17 +29,17 @@
         </div>
     
 
-        <div class="contact flex flex-col w-1/2 justify-start ">
+        <div class="contact flex flex-col md:w-1/2 justify-start ">
         
-            <div class="mt-16 self-start"><strong class=" footer-strong text-5xl text-white ">Get in Touch</strong></div>
+            <div class="mt-16 self-start mb-8"><strong class=" footer-strong text-5xl text-white">Get in Touch</strong></div>
 
-            <div class="flex items-center">
+            <div class="flex md:flex-row flex-col items-center">
                 <form action="submit ">
                 
-                    <group>
-                        <input class="shadow-md rounded-xl bg-white p-1 mr-4" type="text" name="name" placeholder="Name" required>
+                    <div>
+                        <input class="shadow-md rounded-xl bg-white p-1  mb-4 md:mr-4" type="text" name="name" placeholder="Name" required>
                         <input class="shadow-md rounded-xl bg-white p-1" type="text" name="email" placeholder="Email" required>
-                    </group>
+                    </div>
                 
                 
                     <button class=" self-center text-white rounded-sm bg-teal-500 shadow-md px-4 py-2 hover:bg-teal-400 border-0 hover:shadow-xl hover:text-white w-32  ml-4 my-8">Submit</button>

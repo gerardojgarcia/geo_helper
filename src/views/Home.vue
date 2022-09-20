@@ -10,20 +10,23 @@
   import Features from '../components/Features.vue';
   import Community from '../components/Community.vue';
   import Footer from '../components/Footer.vue';
+import ToTop from '../components/ToTop.vue';
+import ToBottom from '../components/ToBottom.vue';
   
   export default {
   
   components: {
-      AppButton,
-      Nav,
-      ShowCase,
-      
-      Topics,
-      Tutoring,
-      Features,
-      Community,
-      Footer
-  },
+    AppButton,
+    Nav,
+    ShowCase,
+    Topics,
+    Tutoring,
+    Features,
+    Community,
+    Footer,
+    ToTop,
+    ToBottom
+},
   props: {
     name: String
   },
@@ -75,7 +78,7 @@
     {
       id: 5,
       topic: 'Volcanoes',
-      description: "Everything you wanted to knmow about minerals",
+      description: "Everything you ssswanted to knmow about minerals",
       image: '/pexels-pixabay-73830.jpg',
       link: "Volcanoes"
   
@@ -151,6 +154,8 @@
               <Topics :topics='topics'/>
               <Tutoring/>
               <Community/>
+              <ToTop/>
+              <ToBottom/>
              
           </div>
         </template>

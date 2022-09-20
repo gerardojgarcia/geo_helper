@@ -15,7 +15,7 @@
 </script>
 
 <template>
-    <div class="feature-card bg-white shadow-lg mx-4 rounded-lg w-52 h-52 flex flex-col ">
+    <div class="feature-card bg-white shadow-lg my-4 md:mx-4 rounded-lg w-52 h-52 flex flex-col ">
             
             <div class=" icon-box self-center  bg-yellow-200"><i :class="icon"></i></div>
             <p class="data mt-8 text-3xl text-teal-400 self-center text-center">{{data}}+</p>
