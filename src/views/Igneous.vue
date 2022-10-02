@@ -115,7 +115,7 @@
                 id: 6, 
                 question: "Viscosity depends on ______",
                 answerid: 'quiz-answer6',
-                answer1: "tmeprature",
+                answer1: "temperature",
                 answer2: "All are correct",
                 answer3: "Volatile content",
                 answer4: "silica content"
@@ -164,18 +164,18 @@
   <p>Magma is liquid rock (melt) under the Earth’s surface. Lava is melt that has erupted from a volcano at the Earth’s surface.
 </p>
   <p>Magma forms when hot rock in the earth partially melts. This process occurs only under three circumstances—when the pressure decreases, when volatiles are added to hot rock. And when heat is transferred into the cast by magma rising from the mantle into the crust. 
- Magma occurs in a rang eof compositions: Felsic(silicic) intermediate, mafic and ultramafic. The composition of magma reflects the original composition of the rock from which the magma formed and the way the magma evolves. 
+ Magma occurs in a rang eof compositions: Felsic(silicic) intermediate, mafic and ultramafic. The composition of magma reflects the original composition of the rock from which the magma formed and the way the magma evolves.
 </p>
   <p>magma rises from depth because of its buoyancy and because of pressure caused by the magma. 
  The rate at which intrusive magma cools depends on the depth at which it intrudes, the size and shape of the magma body, and whiter circulating groundwater s is present. The cooling time influences the texture of an igneous rock. 
  extrusive igneous rocks form from lava that erupts out of a volcano. Intrusive igneous rocks develop from magma the that freezes inside the Earth. 
 </p>
   <p>ava may solidify to form flows. Or it may explode into the air to form ash.
- Intrusive igneous rocks form when magma intrusdes into rprexisting rock below Earth’s surface. Blob-shaped intrusions are called futons. Tabular intrusions that cut across layering are dikes, and those that form parallel to layering are sills. Huge intrusions, made up of many platoons,  are known as batholiths.
+ Intrusive igneous rocks form when magma intrudes into preexisting rock below Earth’s surface. Blob-shaped intrusions are called futons. Tabular intrusions that cut across layering are dikes, and those that form parallel to layering are sills. Huge intrusions, made up of many platoons,  are known as batholiths.
 </p>
 <p>igneous rocks are classified according to texture and composition.
 </p>
-<p>The origin of igneous rocks can readily be understood in the context of plate tectonics. Magm forms at continental or island volcanic arcs alongcconvergent margins, mostly because of the additions of volatiles to the asthenosphere above the subjecting slab. Igneous rocks form at ho spots, owing to the decompression melting o f a rising maple plume. Igneous rocks form at rifts asa result of either decompression melting of the asthenosphere below the thinning lithosphere or heat transfer from mantle melts int crustal rocks. Igneous rocks form along mid-ocean ridges because  of decompression melting of the rising asthenosphere. 
+<p>The origin of igneous rocks can readily be understood in the context of plate tectonics. Magma forms at continental or island volcanic arcs along convergent margins, mostly because of the additions of volatiles to the asthenosphere above the subjecting slab. Igneous rocks form at ho spots, owing to the decompression melting o f a rising maple plume. Igneous rocks form at rifts asa result of either decompression melting of the asthenosphere below the thinning lithosphere or heat transfer from mantle melts int crustal rocks. Igneous rocks form along mid-ocean ridges because  of decompression melting of the rising asthenosphere.
 </p>
 
 
@@ -324,7 +324,7 @@
 
 
  <p><span>Q: </span> Why does melting take place beneath the axis of a mid-ocean ridge?</p>
- <p><span>A: </span> Hot asthenposhere rises to take the place of material that has poured to either side the axis. Closer to the surface, pressure is less than at the depth from which the atmospheric material rose, so the asthenosphere partially melts.</p>
+ <p><span>A: </span> Hot asthenosphere rises to take the place of material that has poured to either side the axis. Closer to the surface, pressure is less than at the depth from which the atmospheric material rose, so the asthenosphere partially melts.</p>
     
     
     
@@ -374,7 +374,7 @@
     }
     
     .igneous-banner2 {
-        background-image: url('/public/pexels-arthur-brognoli-2342505.jpg');
+        background-image: url('/pexels-arthur-brognoli-2342505.jpg');
         min-height: 45vh;
         background-position: center;
         background-size: cover

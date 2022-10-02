@@ -3,7 +3,7 @@
         name: 'FlashCard',
 
         props: {
-            definition: Array
+            definition: Object
         }
     }
 </script>
@@ -12,7 +12,7 @@
 
 
 
-    <div class="card w-72 h-52 shadow-lg roudned-lg mr-4 mb-16 flex flex-col justify-center items-center cursor-pointer" v-for="definition in definition" :key="id">
+    <div class="card w-72 h-52 shadow-lg rounded-lg mr-4 mb-16 flex flex-col justify-center items-center cursor-pointer" v-for="definition in definition" :key="definition.id">
                 <div class="term w-full text-center">
                 <strong class="text-xl ">{{definition.term}}</strong>
                 </div>
