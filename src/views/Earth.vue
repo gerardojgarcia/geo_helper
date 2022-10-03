@@ -43,7 +43,7 @@ export default {
                 question: "The estimated age of the Earth is _____",
                 answerid: 'quiz-answer3',
                 answer1: "5 million years",
-                answer2: "6 billlion years",
+                answer2: "6 billion years",
                 answer3: "14 billion years",
                 answer4: "100 billion years",
                 method: "@click='correct(quiz.answerid)'"
@@ -73,7 +73,7 @@ export default {
                 id: 6, 
                 question: "Why do stars and constellations change location over the course of one night?",
                 answerid: 'quiz-answer6',
-                answer1: "The stars themselves are movign",
+                answer1: "The stars themselves are moving",
                 answer2: "Our Planet rotates on its axis",
                 answer3: "Our planet rotates around tour Sun",
                 answer4: "None are correct"
@@ -83,7 +83,7 @@ export default {
                 id: 7, 
                 question: "Why do stars and constellations change location over the course of one night?",
                 answerid: 'quiz-answer7',
-                answer1: "The stars themselves are movign",
+                answer1: "The stars themselves are moving",
                 answer2: "Our Planet rotates on its axis",
                 answer3: "Our planet rotates around tour Sun",
                 answer4: "None are correct"

@@ -16,7 +16,7 @@ components: {
     AppButton,
     Nav,
     ShowCase,
-    
+
     Topics,
     Tutoring,
     Features,
@@ -27,106 +27,8 @@ props: {
   name: String
 },
 
-data() {
-  return {
-    topics: []
-  }
-},
-
-created() {
-  this.topics = [
 
 
-  {
-    id: 1,
-    topic: 'The Earth',
-    description: "An overview of the Earth and it's life systems",
-    image: '/img1.png',
-    link: 'google.com'
-  },
-
-  {
-    id: 2,
-    topic: 'Minerals',
-    description: "Everything you wanted to knmow about minerals",
-    image: '/pexels-pixabay-56030.jpg',
-    link: "weebly.com"
-
-  },
-
-  {
-    id: 3,
-    topic: 'Tectonics',
-    description: "Everything you wanted to knmow about minerals",
-    image: '/img6.png',
-    link: "weebly.com"
-
-  },
-
-  {
-    id: 4,
-    topic: 'Igneous Rocks',
-    description: "Everything you wanted to knmow about minerals",
-    image: '/img3.png',
-    link: "weebly.com"
-
-  },
-  {
-    id: 5,
-    topic: 'Volcanoes',
-    description: "Everything you wanted to knmow about minerals",
-    image: '/pexels-pixabay-73830.jpg',
-    link: "weebly.com"
-
-  },
-  {
-    id: 6,
-    topic: 'Sedimentary Rocks',
-    description: "Everything you wanted to knmow about minerals",
-    image: '/img6.png',
-    link: "weebly.com"
-
-  },
-  {
-    id: 7,
-    topic: 'Metamorphic Rocks',
-    description: "Everything you wanted to knmow about minerals",
-    image: '/img5.png',
-    link: "weebly.com"
-
-  },
-  {
-    id: 8,
-    topic: 'Earthquakes',
-    description: "Everything you wanted to knmow about minerals",
-    image: '/img8.png',
-    link: "weebly.com"
-
-  },
-  {
-    id: 9,
-    topic: 'Mountains',
-    description: "Everything you wanted to knmow about minerals",
-    image: '/pexels-eberhard-grossgasteiger-1670187.jpg',
-    link: "weebly.com"
-
-  },
-  {
-    id: 10,
-    topic: 'Desert Geology',
-    description: "Everything you wanted to knmow about minerals",
-    image: '/img2.png',
-    link: "weebly.com"
-
-  },
-
-
-
-
-
-
-  ]
-}
 
 
 }

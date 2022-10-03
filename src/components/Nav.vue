@@ -30,7 +30,7 @@ import NavSearch from './NavSearch.vue';
                 
                 
                <router-link to="/">Home</router-link>
-               <router-link to="earth">Topics</router-link>
+               <router-link to="topics">Topics</router-link>
              
                <a href="#">Tutoring</a>
                <a href="#">FAQ</a>

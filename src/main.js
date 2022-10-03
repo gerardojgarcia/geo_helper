@@ -9,6 +9,7 @@ import Tectonics from './views/Tectonics.vue'
 import Volcanoes from './views/Volcanoes.vue'
 import Igneous from './views/Igneous.vue'
 import Sedimentary from './views/Sedimentary.vue'
+import TopicPage from "./views/TopicPage.vue";
 import Home from './views/Home.vue'
 import App from './App.vue'
 
@@ -20,7 +21,7 @@ const router = createRouter({
         { path: '/earth', name: 'earth', component: Earth},
         { path: '/minerals', name: 'minerals', component: Minerals},
         { path: '/tectonics', name: 'tectonics', component: Tectonics},
-        
+        {path: '/topics', name: 'topics', component: TopicPage},
         { path: '/volcanoes', name: 'volcanoes', component: Volcanoes},
         { path: '/igneous', name: 'igneous', component: Igneous},
         { path: '/sedimentary', name: 'sedimentary', component: Sedimentary},
