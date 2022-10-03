@@ -1,6 +1,8 @@
 <script>
 import ToTop from '../components/ToTop.vue'
 import ToBottom from '../components/ToBottom.vue';
+import FlashCards from "../components/FlashCards.vue";
+import Quiz from "../components/Quiz.vue";
     export default {
     name: "Minerals",
     methods: {
@@ -31,7 +33,99 @@ import ToBottom from '../components/ToBottom.vue';
             //answerEl.classList.add('red')
         }
     },
-    components: { ToTop, ToBottom }
+    components: {Quiz, FlashCards, ToTop, ToBottom },
+
+      data(){
+        return {
+
+          quiz: [],
+          definition: []
+        }
+      },
+
+      created(){
+        this.quiz = [
+          {
+            id: 1,
+            question: "Why do stars and constellations change location over the course of one night?",
+            answerid: 'quiz-answer',
+            answer1: "The stars themselves are movign",
+            answer2: "Our Planet rotates on its axis",
+            answer3: "Our planet rotates around tour Sun",
+            answer4: "None are correct"
+
+          },
+          {
+            id: 2,
+            question: "According to the Big Bang Theory, our Universe is _____",
+            answerid: 'quiz-answer2',
+            answer1: "Contracting",
+            answer2: "Expanding",
+            answer3: "static (unchanging)",
+            answer4: "None are correct"
+
+          },
+          {
+            id: 3,
+            question: "The estimated age of the Earth is _____",
+            answerid: 'quiz-answer3',
+            answer1: "5 million years",
+            answer2: "6 billion years",
+            answer3: "14 billion years",
+            answer4: "100 billion years",
+            method: "@click='correct(quiz.answerid)'"
+
+          },
+          {
+            id: 4,
+            question: "Why do stars and constellations change location over the course of one night?",
+            answerid: 'quiz-answer4',
+            answer1: "The stars themselves are movign",
+            answer2: "Our Planet rotates on its axis",
+            answer3: "Our planet rotates around tour Sun",
+            answer4: "None are correct"
+
+          },
+          {
+            id: 5,
+            question: "Why do stars and constellations change location over the course of one night?",
+            answerid: 'quiz-answer5',
+            answer1: "The stars themselves are movign",
+            answer2: "Our Planet rotates on its axis",
+            answer3: "Our planet rotates around tour Sun",
+            answer4: "None are correct"
+
+          },
+          {
+            id: 6,
+            question: "Why do stars and constellations change location over the course of one night?",
+            answerid: 'quiz-answer6',
+            answer1: "The stars themselves are moving",
+            answer2: "Our Planet rotates on its axis",
+            answer3: "Our planet rotates around tour Sun",
+            answer4: "None are correct"
+
+          },
+          {
+            id: 7,
+            question: "Why do stars and constellations change location over the course of one night?",
+            answerid: 'quiz-answer7',
+            answer1: "The stars themselves are moving",
+            answer2: "Our Planet rotates on its axis",
+            answer3: "Our planet rotates around tour Sun",
+            answer4: "None are correct"
+
+          },
+        ],
+            this.definition = [
+              {
+                id: 1,
+                term: "Asthenosphere",
+                definition: "The rock we're spinning on"
+              },
+
+            ];
+      },
 }
     
     
@@ -64,7 +158,7 @@ import ToBottom from '../components/ToBottom.vue';
 </p>
     <p>Biogenic minerals are produced by organisms. The minerals in shells are an example of biomineralization. in the crystalline lattice of minerals, atoms occur in a specific pattern-one of nature’s first expels of ordering. 
 </p>
-    <p>minerals can form by solidification of a melt, precipitation from a water solution, diffusion through a solid, the metabolism of organisms, and precipitation from a gas. 
+    <p>Minerals can form by solidification of a melt, precipitation from a water solution, diffusion through a solid, the metabolism of organisms, and precipitation from a gas.
  About 4,000 different types of minerals are known, each with a name and distinctive physical properties ( cleavage, magnetism and reactivity with acid. )
 </p>
     <p>the unique physical properties of a mineral reflect its chemical composition and crystal structure . By observing these physical properties, you can identify minerals. 
@@ -101,10 +195,10 @@ import ToBottom from '../components/ToBottom.vue';
                         <strong class="text-4xl mt-8 ">Knowledge Check</strong>
     
                         <div class="w-full flex flex-col  text-center  mb-16 ">
-                            <p class="mt-2 text-lg ml-8">What gas is the atmosphere primarily composed of?</p>
+                            <p class="mt-2 text-lg ml-8">Which of the following is considered a mineral?</p>
                             <p id="answer2" class="text-xl"></p>
                             <div class=" w-1/2 flex flex-row justify-center items-center m-auto">
-                            <button class="right text-white rounded-sm bg-teal-500 shadow-md px-4 py-2 hover:bg-teal-400 border-0 hover:shadow-xl hover:text-white mr-4" @click="answer2">Nitrogen</button> <button class="wrong text-white rounded-sm bg-teal-500 shadow-md px-4 py-2 hover:bg-teal-400 border-0 hover:shadow-xl hover:text-white" @click="wrongAnswer2">Oxygen</button></div>
+                            <button class="right text-white rounded-sm bg-teal-500 shadow-md px-4 py-2 hover:bg-teal-400 border-0 hover:shadow-xl hover:text-white mr-4" @click="answer2">Salt</button> <button class="wrong text-white rounded-sm bg-teal-500 shadow-md px-4 py-2 hover:bg-teal-400 border-0 hover:shadow-xl hover:text-white" @click="wrongAnswer2">Plastic</button></div>
                         </div>
                     
                     
@@ -146,10 +240,10 @@ import ToBottom from '../components/ToBottom.vue';
                         <strong class="text-4xl mt-8 ">Knowledge Check</strong>
     
                         <div class="w-full flex flex-col text-center  mb-16 ">
-                            <p class="mt-2 text-xl">Which is more dense?</p>
+                            <p class="mt-2 text-xl">What are biogenic minerals made of?</p>
                           <p id="answer" class="text-xl"></p>
                             <div class=" w-1/2 flex flex-row justify-center items-center m-auto">
-                            <button class="right text-white rounded-sm bg-teal-500 shadow-md px-4 py-2 hover:bg-teal-400 border-0 hover:shadow-xl hover:text-white mr-4" @click="answer">Oceanic Crust</button> <button class="wrong text-white rounded-sm bg-teal-500 shadow-md px-4 py-2 hover:bg-teal-400 border-0 hover:shadow-xl hover:text-white" @click="wrongAnswer">Continental Crust</button></div>
+                            <button class="right text-white rounded-sm bg-teal-500 shadow-md px-4 py-2 hover:bg-teal-400 border-0 hover:shadow-xl hover:text-white mr-4" @click="answer"> Living Organisms</button> <button class="wrong text-white rounded-sm bg-teal-500 shadow-md px-4 py-2 hover:bg-teal-400 border-0 hover:shadow-xl hover:text-white" @click="wrongAnswer">Biotite</button></div>
                         </div>
                     
                     
@@ -172,13 +266,13 @@ import ToBottom from '../components/ToBottom.vue';
 </p>
     <p><span>A: </span>glass is atomically disordered, having no fixed crystalline arrangement. Because there is no feed spatial arrangement for th atoms within glass glass fails the crystalline structure requirement in the definition of a mineral. 
 </p>
-    <p><span>Q: </span>Salit is a mineral, but the plastic of an inexpensive pen is not. Why not?
+    <p><span>Q: </span>Salt is a mineral, but the plastic of an inexpensive pen is not. Why not?
 </p>
     <p><span>A: </span>the plastic is not a mineral because it lacks crystal structure and does not occur naturally. 
 </p>
     <p><span>Q: </span>Describe several ways in which mineral crystal can form.
 </p>
-    <p><span>A: </span>crystal can solidly from a melt, freezing from hot liquid rock the formation of igneous rock. Crystals can also form through solid-state diffusion, in which new crystal are formed from the atoms that were present in a preexisting mineral. Movement of atoms or iOS to form the new structure can be driven by heat and pressure; thus, solid-state diffusion is associated with metamorphic rock formation. Mineral crystals can form through precipitation out of water or out of a gas. Precipitin of crystals might be due to inorganic physical processes, but might also result from the metabolic activities of organisms.</p>
+    <p><span>A: </span>crystal can solidify from a melt, freezing from hot liquid rock the formation of igneous rock. Crystals can also form through solid-state diffusion, in which new crystal are formed from the atoms that were present in a preexisting mineral. Movement of atoms or iOS to form the new structure can be driven by heat and pressure; thus, solid-state diffusion is associated with metamorphic rock formation. Mineral crystals can form through precipitation out of water or out of a gas. Precipitation of crystals might be due to inorganic physical processes, but might also result from the metabolic activities of organisms.</p>
     <p><span>Q: </span>Why do some minerals occur as euhedral crystals, whereas other occur as anhedral grains?
 </p>
     <p><span>A: </span>euhedral crystals (those with clearly defined faces and edges) develop when crystal growth occurs in unoccupied space; crystal geometry is determined by the internal lattice structure of the elements make up the mineral. More commonly in igneous rocks, numerous crystal form more or less simultaneously in a tightly packed space . In this case, the competing crystals intertwine as they crystallize, forming irregular boundaries. Such crystals lack the clearly defined faces of exemplary euhedral crystals and are termed anhedral grains (their irregular shapes are reminiscent of those of weather grains of sediment)
@@ -235,7 +329,8 @@ import ToBottom from '../components/ToBottom.vue';
             </div>
     
     
-    
+    <FlashCards :definition="definition"/>
+          <Quiz :quiz="quiz"/>
     
     
     
