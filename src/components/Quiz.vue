@@ -8,15 +8,15 @@ export default {
 
     
     methods: {
-        correct(answerid) {
+        correct(answerId) {
             const answerEl = document.getElementById(answerid);
             answerEl.innerText = "";
             answerEl.innerText = "That's Correct!"
             answerEl.classList.remove("red");
             answerEl.classList.add("green");
-            console.log(this.quiz.answerid)
+            console.log(this.quiz.answerId)
         },
-        wrong(answerid) {
+        wrong(answerId) {
             const answerEl = document.getElementById(answerid);
             answerEl.classList.remove("green");
             answerEl.classList.add("red");
@@ -44,10 +44,10 @@ export default {
         
         </div>
         <div class="quiz w-full m-2 ">
-            <div class="question flex flex-col rounded-xl shadow-lg p-2 mb-8" v-for="quiz in quiz" :key="id">
+            <div class="question flex flex-col rounded-xl shadow-lg p-2 mb-8" v-for="quiz in quiz" :key="quiz.id">
             <strong class="mb-8 mt-4 text-xl">{{quiz.question}}</strong>
-            <p :id="quiz.answerid" class="mb-4"></p>
-            <div class="answers mb-2"><button @click="wrong(quiz.answerid)">{{quiz.answer1}}</button><button @click="correct(quiz.answerid)">{{quiz.answer2}}</button> <button @click="wrong(quiz.answerid)">{{quiz.answer3}}</button><button @click="wrong(quiz.answerid)">{{quiz.answer4}}</button></div>
+            <p :id="quiz.answerId" class="mb-4"></p>
+            <div class="answers mb-2"><button @click="wrong(quiz.answerId)">{{quiz.answer1}}</button><button @click="correct(quiz.answerId)">{{quiz.answer2}}</button> <button @click="wrong(quiz.answerId)">{{quiz.answer3}}</button><button @click="wrong(quiz.answerId)">{{quiz.answer4}}</button></div>
 
             
             </div>

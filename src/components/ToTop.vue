@@ -18,7 +18,7 @@ export default {
 <template>
 
 
-<div @click="toTop" id="back-button" class="back-button cursor-pointer w-28 h-28 bg-yellow-400 rounded-3xl flex items-center justify-center mr-4  self-end shadow-lg">
+<div @click="toTop" id="back-button" class="back-button cursor-pointer hidden w-28 h-28 bg-yellow-400 rounded-3xl lg:flex items-center justify-center mr-4  self-end shadow-lg">
     <div class="  rounded-xl self-center text-6xl  "><i class="fa-solid fa-arrow-up"></i></div>
 </div>
 

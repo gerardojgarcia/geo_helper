@@ -1,9 +1,10 @@
 <script>
+    import ToTop from "../components/ToTop.vue";
+    import ToBottom from '../components/ToBottom.vue'
     export default {
         name: 'Volcanoes',
-    
-    
-        methods: {
+      components: {ToTop, ToBottom},
+      methods: {
             answer(){
                 const answerEl = document.getElementById('answer')
     
@@ -246,7 +247,8 @@
     
     
     
-    
+    <ToTop/>
+    <ToBottom/>
     
     
     

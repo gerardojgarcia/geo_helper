@@ -21,7 +21,7 @@ const router = createRouter({
         { path: '/earth', name: 'earth', component: Earth},
         { path: '/minerals', name: 'minerals', component: Minerals},
         { path: '/tectonics', name: 'tectonics', component: Tectonics},
-        {path: '/topics', name: 'topics', component: TopicPage},
+        { path: '/topics', name: 'topics', component: TopicPage},
         { path: '/volcanoes', name: 'volcanoes', component: Volcanoes},
         { path: '/igneous', name: 'igneous', component: Igneous},
         { path: '/sedimentary', name: 'sedimentary', component: Sedimentary},

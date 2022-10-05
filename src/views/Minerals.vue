@@ -48,7 +48,7 @@ import Quiz from "../components/Quiz.vue";
           {
             id: 1,
             question: "Why do stars and constellations change location over the course of one night?",
-            answerid: 'quiz-answer',
+            answerId: 'quiz-answer',
             answer1: "The stars themselves are movign",
             answer2: "Our Planet rotates on its axis",
             answer3: "Our planet rotates around tour Sun",
@@ -58,7 +58,7 @@ import Quiz from "../components/Quiz.vue";
           {
             id: 2,
             question: "According to the Big Bang Theory, our Universe is _____",
-            answerid: 'quiz-answer2',
+            answerId: 'quiz-answer2',
             answer1: "Contracting",
             answer2: "Expanding",
             answer3: "static (unchanging)",
@@ -68,19 +68,19 @@ import Quiz from "../components/Quiz.vue";
           {
             id: 3,
             question: "The estimated age of the Earth is _____",
-            answerid: 'quiz-answer3',
+            answerId: 'quiz-answer3',
             answer1: "5 million years",
             answer2: "6 billion years",
             answer3: "14 billion years",
             answer4: "100 billion years",
-            method: "@click='correct(quiz.answerid)'"
+            method: "@click='correct(quiz.answerId)'"
 
           },
           {
             id: 4,
             question: "Why do stars and constellations change location over the course of one night?",
-            answerid: 'quiz-answer4',
-            answer1: "The stars themselves are movign",
+            answerId: 'quiz-answer4',
+            answer1: "The stars themselves are moving",
             answer2: "Our Planet rotates on its axis",
             answer3: "Our planet rotates around tour Sun",
             answer4: "None are correct"
@@ -89,7 +89,7 @@ import Quiz from "../components/Quiz.vue";
           {
             id: 5,
             question: "Why do stars and constellations change location over the course of one night?",
-            answerid: 'quiz-answer5',
+            answerId: 'quiz-answer5',
             answer1: "The stars themselves are movign",
             answer2: "Our Planet rotates on its axis",
             answer3: "Our planet rotates around tour Sun",
@@ -99,7 +99,7 @@ import Quiz from "../components/Quiz.vue";
           {
             id: 6,
             question: "Why do stars and constellations change location over the course of one night?",
-            answerid: 'quiz-answer6',
+            answerId: 'quiz-answer6',
             answer1: "The stars themselves are moving",
             answer2: "Our Planet rotates on its axis",
             answer3: "Our planet rotates around tour Sun",
@@ -109,7 +109,7 @@ import Quiz from "../components/Quiz.vue";
           {
             id: 7,
             question: "Why do stars and constellations change location over the course of one night?",
-            answerid: 'quiz-answer7',
+            answerId: 'quiz-answer7',
             answer1: "The stars themselves are moving",
             answer2: "Our Planet rotates on its axis",
             answer3: "Our planet rotates around tour Sun",
