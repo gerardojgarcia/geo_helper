@@ -1,6 +1,6 @@
 import { createApp } from 'vue'
 import { createRouter, createWebHistory} from 'vue-router'
-import { VueScrollTo } from 'vue-scrollto'
+
 import './style.css'
 import './index.css'
 import Earth from './views/Earth.vue'
@@ -43,4 +43,4 @@ const router = createRouter({
 
 
 
-createApp(App).use(router, VueScrollTo).mount('#app')
+createApp(App).use(router).mount('#app')

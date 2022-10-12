@@ -4,6 +4,7 @@ import FlashCard from '../components/FlashCard.vue'
 import Quiz from '../components/Quiz.vue';
 import ToTop from '../components/ToTop.vue';
 import ToBottom from '../components/ToBottom.vue';
+import JumpToSection from "../components/JumpToSection.vue";
 
 export default {
     name: "Earth",
@@ -176,6 +177,7 @@ export default {
     components: 
     
     {
+      JumpToSection,
     FlashCards,
     FlashCard,
     Quiz,
@@ -201,10 +203,14 @@ export default {
                 <h1 class="text-7xl text-shadow-lg">The Earth</h1>
                 <p class="w-1/2 pl-2 mt-8 text-lg">Everything you wanted to know about the planet we live on.</p>
             </div>
+          <div>
+            <JumpToSection/>
+          </div>
 
 
         </div>
-        <div class="earth-summary w-3/4 m-auto mt-16 indent-2">
+        <div id="summary" class="earth-summary w-3/4 m-auto mt-16 indent-2">
+
 
 
 
@@ -233,7 +239,7 @@ export default {
                 protostars at the center of these disks eventually became so dense and hot that fusion reactions began
                 within them. When this happened, they because true stars, emitting heat and light. Earth, and the life
                 forms on it contains elements that could have been produced only during the life cycle of stars. Thus,
-                we are all made of stardust. Planets developed from the rings of gas and dust surrounding porotostars.
+                we are all made of stardust. Planets developed from the rings of gas and dust surrounding protostars.
                 The gas and dust condensed into planetesimals. Which then clumped together to form protoplanets. And
                 finally true planets. Inner rings became the terrestrial planets; outer rings grew into giant planets.
                 The moon formed from debris ejected when a protoplanet collided with earth in the young solar system.
@@ -300,7 +306,7 @@ export default {
 
 
 
-        <div class="earth_points w-3/4 m-auto mt-16">
+        <div id="key_points" class="earth_points w-3/4 m-auto mt-16">
 
             <div class="mb-16"><strong class="text-5xl text-shadow-sm ">Key Points</strong></div>
 
@@ -374,7 +380,7 @@ export default {
         </div>
 
 
-        <div class="earth_questions w-3/4 m-auto mt-16">
+        <div id="questions_answers" class="earth_questions w-3/4 m-auto mt-16">
 
             <div class="mb-16"><strong class="text-5xl text-shadow-sm ">Questions & Answers</strong></div>
 
