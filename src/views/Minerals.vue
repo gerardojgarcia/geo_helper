@@ -3,6 +3,7 @@ import ToTop from '../components/ToTop.vue'
 import ToBottom from '../components/ToBottom.vue';
 import FlashCards from "../components/FlashCards.vue";
 import Quiz from "../components/Quiz.vue";
+import JumpToSection from "../components/JumpToSection.vue";
     export default {
     name: "Minerals",
     methods: {
@@ -33,7 +34,7 @@ import Quiz from "../components/Quiz.vue";
             //answerEl.classList.add('red')
         }
     },
-    components: {Quiz, FlashCards, ToTop, ToBottom },
+    components: {JumpToSection, Quiz, FlashCards, ToTop, ToBottom },
 
       data(){
         return {
@@ -49,7 +50,7 @@ import Quiz from "../components/Quiz.vue";
             id: 1,
             question: "Why do stars and constellations change location over the course of one night?",
             answerId: 'quiz-answer',
-            answer1: "The stars themselves are movign",
+            answer1: "The stars themselves are moving",
             answer2: "Our Planet rotates on its axis",
             answer3: "Our planet rotates around tour Sun",
             answer4: "None are correct"
@@ -116,13 +117,14 @@ import Quiz from "../components/Quiz.vue";
             answer4: "None are correct"
 
           },
-        ],
-            this.definition = [
+        ]
+   this.definition = [
               {
                 id: 1,
                 term: "Asthenosphere",
                 definition: "The rock we're spinning on"
               },
+
 
             ];
       },
@@ -143,10 +145,13 @@ import Quiz from "../components/Quiz.vue";
                     <h1 class="text-7xl text-shadow-lg">Minerals</h1>
                     <p class="w-1/2 pl-2 mt-8 text-lg">Everything you wanted to know about minerals.</p>
                 </div>
+              <div>
+                <JumpToSection/>
+              </div>
     
     
             </div>
-            <div class="earth-summary w-3/4 m-auto mt-16 indent-2">
+            <div id="summary" class="earth-summary w-3/4 m-auto mt-16 indent-2">
     
     
     
@@ -213,7 +218,7 @@ import Quiz from "../components/Quiz.vue";
     
     
     
-            <div class="mineral_points w-3/4 m-auto mt-16">
+            <div id="key_points" class="mineral_points w-3/4 m-auto mt-16">
     
                 <div class="mb-16"><strong class="text-5xl text-shadow-sm ">Key Points</strong></div>
 
@@ -252,8 +257,11 @@ import Quiz from "../components/Quiz.vue";
             
             </div>
     
-    
-            <div class="mineral_questions w-3/4 m-auto mt-16">
+    <!--Questions & Answers-->
+
+
+
+            <div id="questions_answers" class="mineral_questions w-3/4 m-auto mt-16">
     
                 <div class="mb-16"><strong class="text-5xl text-shadow-sm ">Questions & Answers</strong></div>
     

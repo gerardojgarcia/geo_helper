@@ -1,9 +1,11 @@
 <script>
+    import JumpToSection from "../components/JumpToSection.vue";
+    import ToTop from "../components/ToTop.vue";
+    import ToBottom from "../components/ToBottom.vue";
     export default {
         name: 'Tectonics',
-    
-    
-        methods: {
+      components: {ToBottom, ToTop, JumpToSection},
+      methods: {
             answer(){
                 const answerEl = document.getElementById('answer')
     
@@ -61,11 +63,16 @@
                 <div class="w-1/2 ml-16 mt-32 text-white">
                     <h1 class="text-7xl text-shadow-lg">Plate Tectonics</h1>
                     <p class="w-1/2 pl-2 mt-8 text-lg">Everything you wanted to know about tectonics.</p>
+
                 </div>
-    
+              <div>
+
+                <JumpToSection/>
+              </div>
+
     
             </div>
-            <div class="tectonic-summary w-3/4 m-auto mt-16 indent-2">
+            <div id="summary" class="tectonic-summary w-3/4 m-auto mt-16 indent-2">
     
     
     
@@ -143,7 +150,7 @@ Lithosphere plates effectively float on the underlying soft asthenoshpere. Conti
     
     
     
-            <div class="tectonic_points w-3/4 m-auto mt-16">
+            <div id="key_points" class="tectonic_points w-3/4 m-auto mt-16">
     
                 <div class="mb-16"><strong class="text-5xl text-shadow-sm ">Key Points</strong></div>
 
@@ -199,7 +206,7 @@ Lithosphere plates effectively float on the underlying soft asthenoshpere. Conti
             </div>
     
     
-            <div class="tectonic_questions w-3/4 m-auto mt-16">
+            <div id="questions_answers" class="tectonic_questions w-3/4 m-auto mt-16">
     
                 <div class="mb-16"><strong class="text-5xl text-shadow-sm ">Questions & Answers</strong></div>
     
@@ -265,7 +272,8 @@ Lithosphere plates effectively float on the underlying soft asthenoshpere. Conti
     
     
     
-    
+    <ToTop/>
+          <ToBottom/>
     
     
     

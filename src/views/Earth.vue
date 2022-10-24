@@ -202,8 +202,11 @@ export default {
             <div class="w-1/2 ml-16 mt-32 text-white">
                 <h1 class="text-7xl text-shadow-lg">The Earth</h1>
                 <p class="w-1/2 pl-2 mt-8 text-lg">Everything you wanted to know about the planet we live on.</p>
+
+
+
             </div>
-          <div>
+          <div >
             <JumpToSection/>
           </div>
 
