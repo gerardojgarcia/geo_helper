@@ -4,16 +4,18 @@
   import AppButton from '../components/AppButton.vue'
   import Nav from '../components/Nav.vue';
   import ShowCase from '../components/ShowCase.vue';
- 
   import Topics from '../components/Topics.vue';
   import Tutoring from '../components/Tutoring.vue';
   import Features from '../components/Features.vue';
   import Community from '../components/Community.vue';
   import Footer from '../components/Footer.vue';
-import ToTop from '../components/ToTop.vue';
-import ToBottom from '../components/ToBottom.vue';
+  import ToTop from '../components/ToTop.vue';
+  import ToBottom from '../components/ToBottom.vue';
+
   
   export default {
+
+
   
   components: {
     AppButton,
@@ -130,12 +132,24 @@ import ToBottom from '../components/ToBottom.vue';
   
   
     ]
+  },
+
+    methods: {
+
+      track() {
+        this.$gtag.pageview(this.$route)
+      }
+
+
+
+    }
+
+
+
+  
   }
-  
-  
-  }
-  
-  
+
+
   
   
   </script>

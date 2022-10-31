@@ -1,5 +1,6 @@
 import { createApp } from 'vue'
 import { createRouter, createWebHistory} from 'vue-router'
+import VueGtag from "vue-gtag";
 
 import './style.css'
 import './index.css'
@@ -12,9 +13,14 @@ import Sedimentary from './views/Sedimentary.vue'
 import TopicPage from "./views/TopicPage.vue";
 import Home from './views/Home.vue'
 import App from './App.vue'
+import Metamorphic from "./views/Metamorphic.vue";
 
 
-const router = createRouter({
+
+
+
+
+ const router = createRouter({
     history: createWebHistory(),
     routes: [
         { path: '/', name: 'Home', component: Home},
@@ -25,6 +31,7 @@ const router = createRouter({
         { path: '/volcanoes', name: 'volcanoes', component: Volcanoes},
         { path: '/igneous', name: 'igneous', component: Igneous},
         { path: '/sedimentary', name: 'sedimentary', component: Sedimentary},
+        { path: '/metamorphic', name: 'metamorphic', component: Metamorphic}
 
     ],
 
@@ -43,4 +50,6 @@ const router = createRouter({
 
 
 
-createApp(App).use(router).mount('#app')
+
+createApp(App).use(router, (VueGtag, { config: {id: "G-2N50LHTJC8" }})).mount('#app')
+

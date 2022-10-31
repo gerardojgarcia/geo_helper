@@ -50,8 +50,18 @@
                 answerEl.innerText = "Sorry, keep on studying!"
                 
                 //answerEl.classList.add('red')
+            },
+
+
+            track(){
+              this.$gtag.pageview(this.$route)
             }
+
+
+
         },
+
+
         data(){
         return {
 
@@ -65,15 +75,15 @@
                 id: 1, 
                 question: "Igneous Rocks _____",
                 answerid: 'quiz-answer',
-                answer1: "Are formed thorug hte freezing of melt",
+                answer1: "Are formed through hte freezing of melt",
                 answer2: " All are correct  ",
                 answer3: "Are the most common type",
-                answer4: "can be produced at the4 ssurface of the earth as well as deep below the surface "
+                answer4: "can be produced at the4 surface of the earth as well as deep below the surface "
 
             },
             {
                 id: 2, 
-                question: "Very early in Earth's hsitory, it was so thot hat the sruface was likely entirely molten",
+                question: "Very early in Earth's history, it was so hot hat the surface was likely entirely molten",
                 answerid: 'quiz-answer2',
                 answer1: "False",
                 answer2: "True",
@@ -96,14 +106,14 @@
                 question: "The formation of magma within the Earth is NOT caused by which of the following processes?",
                 answerid: 'quiz-answer4',
                 answer1: "decompression (drop in pressure)",
-                answer2: "Los off volatiles to the atmosphre",
+                answer2: "Los off volatiles to the atmosphere",
                 answer3: "transfer of heat form adjacent magma or very hot rocks",
-                answer4: "Additon of volatiles"
+                answer4: "Addition of volatiles"
 
             },
             {
                 id: 5, 
-                question: "Compared to magic igneous rocks, all felsic igneous rokcs _____",
+                question: "Compared to magic igneous rocks, all felsic igneous rocks _____",
                 answerid: 'quiz-answer5',
                 answer1: "cool and solidify more quickly",
                 answer2: "Solidify at lower tempereatures",

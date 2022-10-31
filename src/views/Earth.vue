@@ -172,8 +172,20 @@ export default {
             answerEl.classList.add("red");
             answerEl.innerText = "Sorry, keep on studying!";
             //answerEl.classList.add('red')
+        },
+
+
+
+
+        track() {
+          this.$gtag.pageview(this.$route)
         }
-    },
+
+
+
+      },
+
+
     components: 
     
     {
@@ -199,9 +211,9 @@ export default {
     <div class="w-full flex flex-col text-left  ">
 
         <div class="earth-hero bg-fixed pb-52">
-            <div class="w-1/2 ml-16 mt-32 text-white">
+            <div class="md:w-1/2 ml-16 mt-32 text-white">
                 <h1 class="text-7xl text-shadow-lg">The Earth</h1>
-                <p class="w-1/2 pl-2 mt-8 text-lg">Everything you wanted to know about the planet we live on.</p>
+                <p class="md:w-1/2 pl-2 mt-8 text-lg">Everything you wanted to know about the planet we live on.</p>
 
 
 
